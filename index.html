@@ -11,12 +11,106 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="font-raleway">
+<body class="container mx-auto font-raleway">
 
-    <header></header>
+    <header>
+        <!-- Navbar Part -->
+        <!-- <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="font-extrabold text-4xl text-headingText">IKR Express</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium text-lg text-subText">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a
+                        class="btn px-5 font-bold text-xl bg-bgPrimary border-themePrimary text-themePrimary hover:bg-themePrimary hover:text-white">Bus
+                        <i class="fa-solid fa-bus"></i></a>
+                </div>
+            </div>
+        </nav> -->
+
+        <!-- Banner/Hero Part -->
+        <section id="hero" class="mt-5 mb-8">
+            <div class="hero rounded-2xl  relative" style="background-image: url(./images/banner.jpg);">
+                <div class="hero-overlay bg-opacity-40 rounded-2xl"></div>
+                <div class="hero-content text-center py-32">
+                    <div class="">
+                        <h1 class="mb-5 font-extrabold text-[64px] text-white">End-to-End Travel with <br> <span
+                                class="text-themePrimary">P Paribahan</span></h1>
+                        <p class="mb-5 max-w-xl mx-auto text-white font-inter text-lg">
+                            Yes, you can run unit tests and view the results directly within the app. The integrated
+                            testing features allow for a streamlined .
+                        </p>
+                        <button
+                            class="btn bg-themePrimary hover:bg-white font-bold text-xl text-headingText border-none">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+                <div class="flex gap-24 absolute -bottom-16">
+                    <!--  -->
+                    <div
+                        class="flex gap-4 items-center font-inter p-6 bg-white rounded-2xl border-b-[3px] border-themePrimary">
+                        <img src="./images/people.png" alt="people">
+                        <div class="text-left space-y-2">
+                            <p class="font-bold text-4xl text-headingText">500K+</p>
+                            <p class="text-lg text-[#03071299]">Registered users</p>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                    <div
+                        class="flex gap-4 items-center font-inter p-6 bg-white rounded-2xl border-b-[3px] border-themePrimary">
+                        <img src="./images/ticket-cupon.png" alt="people">
+                        <div class="text-left space-y-2">
+                            <p class="font-bold text-4xl text-headingText">1.7 lacks</p>
+                            <p class="text-lg text-[#03071299]">Ticket Sold</p>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                    <div
+                        class="flex gap-4 items-center font-inter p-6 bg-white rounded-2xl border-b-[3px] border-themePrimary">
+                        <img src="./images/stoppage.png" alt="Rental">
+                        <div class="text-left space-y-2">
+                            <p class="font-bold text-4xl text-headingText">80K+</p>
+                            <p class="text-lg text-[#03071299]">Rental Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 
     <main>
-        <h1>Hello</h1>
+
     </main>
 
     <footer></footer>
@@ -31,6 +125,10 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        themePrimary: '#1DD100',
+                        bgPrimary: '#1DD1001A',
+                        headingText: '#030712',
+                        subText: '#030712B3'
                     },
                     fontFamily: {
                         raleway: ['Raleway', 'sans-serif'],
